@@ -20,7 +20,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	width: 90%;
-	flex-flow: row wrap;
+	flex-flow: column wrap;
 }
 
 h1,
@@ -58,7 +58,7 @@ header {
 
 header h1 {
 	margin: 0;
-	padding: 2em 0 1em 0;
+	padding: 1em 0 1em 0;
 	border-bottom: .125em solid #77a466;
 	width: 100%;
 	text-align: center;
@@ -182,4 +182,35 @@ footer span {
 	text-transform: lowercase;
 	color: #77a466;
 	font-size: .875em;
+}
+
+/* Tablet Styles */
+@media all and (min-width: 768px){
+	.bottom-section{
+		flex-flow: row nowrap;
+		align-items: flex-start;
+	}
+
+	.section-one{
+		padding: .3125em 1em .3125em 0;
+
+	}
+
+	.section-two{
+		border-left: 1px solid #eee;
+		border-right: 1px solid #eee;
+		padding: .3125em 1em;
+	}
+
+	.section-three{
+		padding: .3125em 1em;
+
+	}
+}
+
+/* Desktop Styles */
+@media all and (min-width: 1200px){
+	header nav ul{
+		flex-flow: row nowrap;
+	}
 }
